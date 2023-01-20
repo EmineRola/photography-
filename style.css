@@ -1,0 +1,445 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color: white;
+    font-family: 'open-sans';
+    overflow-x: hidden;
+
+}
+section{
+    height: 100vh;
+ 
+     }
+
+
+ /* header*/
+
+header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+header img{
+    width: 9.375rem;
+
+}
+header nav{
+    display: flex;
+    gap:2.5rem;
+}
+header nav a{
+   color: white;
+   text-decoration: none;
+   font-size:1.125rem;
+   font-weight: 600;
+   transition: color 0.3s, text-shadow 0.5s;
+
+}
+header nav a:hover {
+    color: black;
+    text-shadow: 2px 2px 20px white;
+    transition: all 0.5s;
+}
+
+ /*Welcome*/
+#welcome-sec{
+  background-image: url(./ımages/resim.2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3.125rem 4.375rem;
+
+}
+
+.Welcome-text{
+  
+    width: 90vw;
+    margin: 15rem auto;
+
+    
+
+}
+
+.Welcome-text h1 {
+    font-size: 6rem;
+   text-transform: uppercase;
+   text-align: center;
+
+}
+.Welcome-text p{
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 43.75rem;
+    margin: 6rem auto;
+   text-transform: uppercase;
+
+}
+
+/*ABOUT*/
+
+#about{
+  background-color: black;
+  display: flex;
+  gap: 6.25rem;
+  justify-content: center;
+  align-items: center;
+  padding: 3.125rem;
+}
+#about img{
+  max-width: 37.5rem;
+  max-height: 37.5rem;
+    border-radius: 4px;
+}
+
+.about-text{
+   max-width: 37.5rem;
+
+}
+.about-text h1{
+    font-size: 4.25rem;
+    line-height: 5rem;
+    font-weight: 600;
+
+}
+.about-text p{
+    margin-top: 3rem;
+    font-family: 'poppins';
+}
+
+
+
+/* BATTLE*/
+#battle{
+    background-image: radial-gradient(circle,rgba(0,0,0,0.215) 0%, black 60%), url(./ımages/resim4.jpg);
+    background-position: center;
+
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.heading{
+    padding-top: 6.25rem;
+
+}
+.heading h5{
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+.heading h1{
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 500;
+    
+}
+
+.boxes{
+    width: 38.75rem;
+    height: 31.25rem;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.box{
+    width: 18.75rem;
+  height: 8.125rem;
+  border: 1px solid white;
+  padding: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.625rem;
+  font-family: 'open-sans';
+  overflow: hidden;
+    
+
+   
+ 
+}
+
+.box h1 { color: crimson;
+  text-transform: uppercase;
+  font-size: 1.25rem; 
+}
+
+.box p {
+    font: size 1rem;;
+ 
+  
+}
+
+.boxes  :last-child{
+    width: 37.5rem;
+}
+
+/* optinions*/
+
+#opinions {
+    background-image: url(./ımages/resim5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    display: flex;
+    justify-content: space-evenly;
+  
+    padding: 6.25rem;
+  }
+  .opinions-text {
+    max-width: 30rem;
+    font-family: 'poppins';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.25rem;
+  }
+  .opinions-text h1 {
+    font-size: 5rem;
+  }
+  .opinions-text p {
+    font-size: 1.25rem;
+  }
+  .opinions-text button {
+    padding: 0.75rem;
+    background-color: red;
+    font-weight: 600;
+    transition: color 0.4s, background-color 0.4s;
+   border-radius:  5px;
+    margin-top: 40px;
+    width: 200px;
+    cursor: pointer;
+  }
+  .opinions-text button:hover {
+    background-color: black;
+    color: red;
+    transition: all 0.5s;
+  }
+  .cards {
+    width: 37.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4.37px;
+    justify-content: center;
+    margin-right: 3.125rem;
+  }
+  .card {
+    background-color: rgb(47, 47, 47);
+    width: 28.125rem;
+    border-radius: 10px;
+    font-family: 'poppins';
+    padding: 10px;
+  }
+  .card:nth-child(2) {
+    align-self: flex-start;
+  }
+  .user {
+    display: flex;
+    gap: 1.875rem;
+    align-items: center;
+    margin-bottom: 1.25rem;
+  }
+  .user-info  {
+    color: crimson;
+  }
+  .user-info h1 {
+    font-size: 1.5rem;
+}
+
+  .gray {
+    color: gray;
+  }
+  section{
+    border: 1px solid white;
+   }
+  
+  @media only screen and (max-width: 750px) {
+
+    header{ 
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+  
+    }
+
+    
+header img{
+    width: 100px;
+    margin: -100px;
+    margin-bottom:10px;
+  
+
+}
+header nav{
+   display: flex;
+   gap: 20px;
+ align-items: center;
+
+   
+}
+header nav a{
+   
+   font-size: 17px;
+   font-weight: 600;
+   transition: color 0.3s;
+   color: rgb(20, 10, 10);
+
+}
+header nav a:hover {
+    color: black;
+    text-shadow: 2px 2px 20px white;
+    transition: all 0.5s;
+}
+
+
+
+.Welcome-text{
+  
+    width: 70vw;
+    margin: 100px auto;
+    text-align: center;
+
+    
+
+}
+
+.Welcome-text h1 {
+    font-size:30px;
+   text-transform: uppercase;
+   text-align: center;
+
+}
+.Welcome-text p{
+    font-size: 25px;
+    text-align: center;
+    max-width: 600px;
+    margin:  auto;
+    padding: 35px;
+   text-transform: uppercase;
+
+}
+
+    #about {
+       
+      flex-direction: column;
+      gap:2rem;
+    }
+  
+   
+    .about-text h1 {
+      font-size: 2rem;
+      
+    }
+    .about-text p {
+      margin-top: 0.5rem;
+ 
+    }
+    #about img {
+      width: 15rem;
+      height:13rem;
+     
+    }
+    #battle{
+      gap: 15px;
+    }
+    .heading {
+      padding-top: 2rem;
+  }
+  .heading h5 {
+    font-size: 1rem; 
+}
+.heading h1 {
+  
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-top: 10px; }
+
+  .boxes {
+    width: 20rem;
+    height: 30rem;
+   
+}
+.box{
+  width: 10rem;
+  margin-top: -25px;
+
+}
+.box h1 {
+  font-size: 1rem;
+}
+.box p {
+  font-size: 1rem;
+}
+.box:last-child {
+  width: 37.5rem;
+}
+#opinions {
+  
+  display: flex;
+ flex-direction: column;
+ 
+}
+.opinions-text {
+  
+  flex-direction: column;
+  margin: -60px;
+
+}
+
+.opinions-text h1 {
+  font-size: 1rem;
+
+}
+.opinions-text p{
+  font-size: 1rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+
+}
+
+.opinions-text button{
+  width: 200px;
+  margin-top:20px;
+  margin-bottom:50px;
+}
+.card{
+
+width:20rem;
+height:10rem ;
+}
+.user-info  {
+  color: crimson;
+}
+.user-info h1 {
+  font-size: 1rem;
+}
+.comment p{
+  font-size: 15px;
+}
+
+}
